@@ -6,12 +6,10 @@ inspired by the [fullscreen quad] method.
 
 Each glyph bitmap is encoded in a 32-bit integer.
 A string of N chars can therefore be stored in
-`uniform uint[N]`.
-
-For each glyph, the vertex shader arranges a
-quad on the fly, while the fragment shader decodes
-the relevant bitmap from the uniform array. All
-without the need for attribute buffers or textures.
+`uniform uint[N]`. For each glyph, the vertex shader
+arranges a quad on the fly, while the fragment shader
+decodes the relevant bitmap from the uniform array.
+All without the need for attribute buffers or textures.
 
 ![Screenshot](textshader.png)
 
